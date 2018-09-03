@@ -12,6 +12,9 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
       <link rel="stylesheet" href="resources/style.css">
 	<style>
 	body {
@@ -20,6 +23,16 @@
     background-size: cover;
    background-color: #cccccc;
 }
+	</style>
+	<style>
+	.font1
+	{
+	font-family: 'Roboto Mono', monospace;
+	}
+	.nohyper
+	{
+		text-decoration: none; color: #ffffff !important;
+	}
 	</style>
 	<style>
 	.btn-flat
@@ -120,18 +133,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
       <div class="row">
         <div class="col s12">
           <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-          <a class="brand-logo" target="_blank">MiHub</a>
+          <a class="brand-logo font1" target="_blank">MiHub</a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="tutorials.html" target="_blank">Tutorials</a></li>
-            <li><a href="https://www.celsoazevedo.com/files/android/google-camera/" target="_blank">Google Camera</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="tutorials.html" class="font1" target="_parent">Tutorials</a></li>
+            <li><a href="https://www.celsoazevedo.com/files/android/google-camera/" class="font1" target="_parent">Google Camera</a></li>
+            <li><a href="contact.html" class="font1" target="_parent">Contact</a></li>
           </ul>
         </div>
       </div>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="https://www.gsmarena.com/" target="_blank">Specifications</a></li>
-        <li><a href="firmware.html" target="_blank">Firmware</a></li>
-        <li><a href="https://www.xda-developers.com/ target="_blank">Custom ROMs</a></li>
+        <li><a href="https://www.gsmarena.com/" target="_parent">Specifications</a></li>
+        <li><a href="firmware.html" target="_parent">Firmware</a></li>
+        <li><a href="https://www.xda-developers.com/" target="_parent">Custom ROMs</a></li>
       </ul>
     </div>
   </nav>
@@ -143,13 +156,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	</div>
 	-->
 	<img src="https://i.warosu.org/data/g/img/0556/15/1468762404963.png" style="position:relative; top: 50px; left: 45%;" height="200px" width="200px" class="unselectable">
-	<div style="position:relative; top: 90px; font-size:7vw;" class="white-text center">Firmware</div>
+	<div style="position:relative; top: 90px; font-size:7vw;" class="white-text center font1">Firmware</div>
 	<div style="position:relative; top: 110px; font-size:1.9vw;" class="container white-text center">Here you can find many useful things that you might need for your Xiaomi Redmi Note or Mi device. Everything from information about devices, benchmarks, tutorials and stock factory images to ROMs and Google Camera ports.</div>
 	<div class="row">
      
-      <div style="position:relative; top: 500px; font-size:2vw;" class="col s4 center"><i style="font-size: 120px" class="rounded large material-icons">developer_board</i><br><br>Device Specs</div>
-      <div style="position:relative; top: 500px; font-size:2vw;" class="col s4 center"><i style="font-size: 120px" class="rounded large material-icons">timeline</i><br><br>Benchmarks</div>
-	  <div style="position:relative; top: 500px; font-size:2vw;" class="col s4 center"><i style="font-size: 120px" class="rounded large material-icons">developer_mode</i><br><br>Stock Firmware</div>
+		<a href="specs.html"><div style="position:relative; top: 500px; font-size:2vw;" class="col s4 center"><i style="font-size: 120px" class="nohyper waves-effect rounded large material-icons">developer_board</i><br><br><a href="specs.html" class="font1 nohyper">Device Specs</a></div></a>
+		<a href="benchmarks.html"><div style="position:relative; top: 500px; font-size:2vw;" class="col s4 center"><i style="font-size: 120px" class="nohyper waves-effect rounded large material-icons">timeline</i><br><br><a href="benchmarks.html" class="font1 nohyper">Benchmarks</a></div></a>
+		<a href="firmware.html"><div style="position:relative; top: 500px; font-size:2vw;" class="col s4 center"><i style="font-size: 120px" class="nohyper waves-effect rounded large material-icons">developer_mode</i><br><br><a href="firmware.html" class="font1 nohyper">Stock Firmware</a></div></a>
     </div>
 	
 	<div style="z-index: -1; position:relative; top: 100px; width: 100%; height: 600px;" class="gradient"></div>
