@@ -74,15 +74,17 @@
 	}
 	.md-align-title
 	{
-		position: relative;
-		top: -32px;
-		left: -1.6%;
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		font-size:23px
 	}
 	.align-codename
 	{
 		position: absolute;
-		top: 42px;
+		top: 38px;
 		left: 16px;
+		color: #448aff;
 	}
 	.chip-align
 	{
@@ -115,6 +117,7 @@
 	.card-place
 	{
 	position:relative; left:16%; width:70%;
+	height: 115px;
 	}
 	.md-button {
 	width:150%;
@@ -198,6 +201,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 		z-index: 999;
 	}
 	</style>
+	<style>
+   .dropdown2-content {
+	  margin: 0;
+	  display: none;
+	  min-width: 150px; /* Changed this to accomodate content width */
+	  max-height: auto;
+	  top: 100px;
+		margin-left: 60px;
+		margin-top: -100px;/* Add this to keep dropdown in line with edge of navbar */
+	  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+	  opacity: 0;
+	  position: relative;
+	  white-space: nowrap;
+	  z-index: 1;
+	  will-change: width, height;
+	  
+	}
+	</style>
 	
 </head>
 
@@ -237,11 +258,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	<div class="card-align container">
     <div class="card-place rounded-medium card-panel">
 		
-	<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
+	<a style="position:absolute; top: 10px; right:10px;" href="#!" data-activates="dropdown2" data-beloworigin="true" data-target='dropdown2' class="dropdown-trigger btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
  
 	
 	
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Redmi 5</H4></span>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Redmi 5</a></span>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Rosy</b></span>
 		<div class="chip-align"><div class="chip hoverable">Nougat 7.1.1</div><div class="chip hoverable">Stable 9.6.3</div><div class="chip hoverable">Beta 8.8.30</div></div>
 	<div class="btn-align">
@@ -255,9 +276,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	<div class="card-align container">
     <div class="card-place rounded-medium card-panel">
 		
-		<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
-		
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Redmi 5 Plus</H4>
+		<a style="position:absolute; top: 10px; right:10px;" href="#!" data-activates="dropdown3" data-beloworigin="true" data-target='dropdown3' class="dropdown-trigger btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
+ 
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Redmi 5 Plus</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Vince</b></span>
 		<div class="chip-align"><div class="chip hoverable">Oreo 8.1</div><div class="chip hoverable">Stable 9.6.5</div><div class="chip hoverable">Beta 8.8.30</div></div>
 	<div class="btn-align">
@@ -271,9 +292,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	<div class="card-align container">
     <div class="card-place rounded-medium card-panel">
 		
-		<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
+		<a style="position:absolute; top: 10px; right:10px;" href="#!" data-activates="dropdown4" data-beloworigin="true" data-target='dropdown4' class="dropdown-trigger btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
 		
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Redmi Note 4/4X</H4>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Redmi Note 4/4X</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Mido</b></span>
 		<div class="chip-align"><div class="chip hoverable">Nougat 7.0</div><div class="chip hoverable">Stable 9.6.2</div><div class="chip hoverable">Beta 8.8.30</div></div>
 	<div class="btn-align">
@@ -289,7 +310,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 		
 		<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
 		
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Redmi Note 5 Global</H4>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Redmi Note 5 Global</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Whyred</b></span>
 		<div class="chip-align"><div class="chip hoverable">Oreo 8.1</div><div class="chip hoverable">Stable 9.6.3</div><div class="chip hoverable">Beta 8.8.30</div></div>
 	<div class="btn-align">
@@ -305,7 +326,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 		
 		<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
 		
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Mi A2</H4>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Mi A2</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Jasmine</b></span>
 		<div class="chip-align"><div class="chip hoverable">Oreo 8.1</div><div class="chip hoverable">(o^^)o</div><div style="font-family: 'Norican', cursive;" class="chip hoverable"><b>Blessed with Android One</b></div></div>
 	
@@ -320,7 +341,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 		
 		<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
 	
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Mi Mix 2S</H4>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Mi Mix 2S</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Aries</b></span>
 		<div class="chip-align"><div class="chip hoverable">Oreo 8.1</div><div class="chip hoverable">Stable 9.6.3</div><div class="chip hoverable">Beta 8.8.30</div></div>
 	<div class="btn-align">
@@ -336,7 +357,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 		
 		<a style="position:absolute; top: 10px; right:10px;" class="btn-floating btn waves-effect waves-light grey lighten-3"><i class="material-icons grey-text darken-4-text">image</i></a>
 		
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Mi 6</H4>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Mi 6</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Sagit</b></span>
 		<div class="chip-align"><div class="chip hoverable">Oreo 8.1</div><div class="chip hoverable">Stable 9.6.4</div><div class="chip hoverable">Beta 8.8.4</div></div>
 	<div class="btn-align">
@@ -350,7 +371,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	<div class="card-align container">
     <div class="card-place rounded-medium card-panel">
 	
-		<span class="blue-text text-darken-2"><H4 class="md-align-title font1">Mi 8</H4>
+		<span class="blue-text text-darken-2"><a class="md-align-title font1">Mi 8</a>
 		<span class="blue-text text-darken-2"><b class="align-codename">Codename: Dipper</b></span>
 		<div class="chip-align"><div class="chip hoverable">Oreo 8.1</div><div class="chip hoverable">Stable 9.6.4</div><div class="chip hoverable">Beta 8.8.30</div></div>
 	<div class="btn-align">
@@ -363,6 +384,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	
 	<div style="z-index: -1; position:absolute; bottom: -255%; width: 100%; height: 100%;" class="gradient"></div>
 	
+	<div id="dropdown2" class="z-depth-0 transparent dropdown2-content">
+			<img src="http://attach.en.miui.com/common/40/common_340_phone.png?ugsz.png">
+		  
+			
+      </div>	
+	  
+	  <div href="firmware.html" style="border-radius: 10px 10px 10px 10px; width: 120px" id="dropdown3" class="z-depth-0 transparent dropdown2-content card">
+        <div href="firmware.html" class="card-content blue-text">
+			<p>
+			<img src="http://attach.en.miui.com/common/40/common_340_phone.png?ugsz.png">
+		  
+			</p>
+        </div>
+      </div>	
+	  <div href="firmware.html" style="border-radius: 10px 10px 10px 10px; width: 120px" id="dropdown4" class="z-depth-0 transparent dropdown2-content card">
+        <div href="firmware.html" class="card-content blue-text">
+			<p>
+			<img src="http://attach.en.miui.com/common/ed/common_309_phone.png?ugsz">
+		  
+			</p>
+        </div>
+      </div>	
+
 
 	<footer class="black card-align page-footer">
           <div class="container">
@@ -399,6 +443,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   
 
     <script src="resources/index.js"></script>
+	
+	<script>
+	$('.dropdown-trigger').dropdown();
+	</script>
+	
 	<script>
 	$(window).on('resize', function() {
     if($(window).height() > 400) {
