@@ -459,9 +459,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
         </footer>
             
 	<div class="preloader-background">
-	<div id="progress" class="progress blue">
-  <div id="progressBar" class="determinate" style="width: 0%"></div>
-</div>
+	<div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+        
 </div>
 
 
@@ -474,35 +484,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 
     <script src="resources/index.js"></script>
 	<script>
-	const progress = {
-  init: function(steps) {
-    this.step = 100 / (steps);
-    this.status = 0;
-    this.advance();
-  },
-  advance: function() {
-    this.status += this.step;
-    console.log(`Progress: ${this.status.toFixed(2)}%`);
-    $('#progressBar').css('width', this.status + '%');
-    if (this.status > 99) {
-      $('#progress').addClass('hide');
-    }
-  }
-};
-
-// Use with total amount of steps, initialization included
-progress.init(3);
-// do stuff
-progress.advance();
-// do stuff
-progress.advance();
-	</script>
-	<script>
 	document.addEventListener("DOMContentLoaded", function(){
-	$('.preloader-background').delay(1700).fadeOut('slow');
+	$('.preloader-background').delay(300).fadeOut('slow');
 	
 	$('.preloader-wrapper')
-		.delay(1700)
+		.delay(300)
 		.fadeOut();
 });
 	</script>
