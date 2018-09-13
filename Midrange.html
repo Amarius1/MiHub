@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>MiHub</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="resources/hover.css" rel="stylesheet" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
+   <link rel="stylesheet" href="resources/style.css">
+	<style>
+	body {
+   background-image: url("Wall.jpg");
+   background-position: center; /* Center the image */
+    background-size: cover;
+   background-color: #cccccc;
+}
+	</style>
+	<style>
+	.btn-flat
+{
+   text-transform: none !important 
+   
+}
+
+	</style>
+	<style>
+	.font2
+	{
+	font-family: 'Roboto Mono', monospace;
+	}
+	.font1
+	{
+	font-family: 'Overpass Mono', monospace;
+	}
+	</style>
+	<style>
+	.end01
+	{
+		position: absolute;
+		top: 200px;
+		left: 650px;
+	}
+	</style>
+	<style>
+	.btn-align
+	{
+		position: absolute;
+		bottom: 10.5px;
+		right: 6px;
+	}
+	.btn-align-text
+	{
+		position: relative;
+		bottom:0px;
+		right: 26%;
+	}
+	.md-align-text
+	{
+		position: relative;
+		bottom:-20px;
+		left: -1%;
+	}
+	.md-align-title
+	{
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		font-size:23px
+	}
+	.align-codename
+	{
+		position: absolute;
+		top: 38px;
+		left: 16px;
+		color: #448aff;
+	}
+	.chip-align
+	{
+		position: absolute;
+		top: 70px;
+		left: 2.5%;
+	}
+	</style>
+	<style>
+	.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+	</style>
+	<style>
+	.md-shrink
+	{
+		width: 160px;
+		
+	}
+	.md-aosp
+	{
+		width: 190px;
+
+		
+	}
+	.md-mi8
+	{
+		width: 160px;
+		
+	}
+	.card-align
+	{
+	position:relative; top: 300px;
+	}
+	.card-place
+	{
+	position:relative; left:16%; width:70%;
+	height: 115px;
+	
+	}
+	.card-place2
+	{
+	position:absolute; right:55px; top: 0px;
+	}
+	.card-placemix
+	{
+	position:absolute; right:-14px; top: -11px;
+	}
+	.image-place
+	{
+	position:absolute; left:1px; top: 3px;
+	
+	}
+	.md-button {
+	width:150%;
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	display:block;
+	text-align:center; 
+	}
+	<style>
+	.rounded
+	{
+	border-radius: 10px 10px 10px 10px;"
+	}
+	.rounded-low
+	{
+	border-radius: 5px 5px 5px 5px;"
+	}
+	.rounded-medium
+	{
+	border-radius: 10px 10px 10px 10px;"
+	}
+	.rounded-max
+	{
+	border-radius: 30px 30px 30px 30px;"
+	}
+	</style>
+	<style>
+	
+  .waves-effect.waves-blue .waves-ripple {
+    background-color: rgba(227, 242, 243, 0.65);
+  }
+     
+	 </style>
+	<style>
+	/* width */
+		::-webkit-scrollbar {
+			width: 7px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #ffffff; 
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #bdbdbd; 
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #757575; 
+		}
+		.unselectable {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	</style>
+	<style>
+	.gradient
+	{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,000000+50,191919+100&0+0,0.71+100 */
+background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(0,0,0,0.36) 50%, rgba(25,25,25,0.71) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(0,0,0,0.36) 50%,rgba(25,25,25,0.71) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(0,0,0,0.36) 50%,rgba(25,25,25,0.71) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#b5191919',GradientType=0 ); /* IE6-9 */}
+	</style>
+	<style>
+	.layer1 {
+		position: absolute;
+		z-index: 2;
+	}
+	.layer2 {
+		position: absolute;
+		z-index: 999;
+	}
+	</style>
+	<style>
+   .dropdown2-content {
+	  margin: 0;
+	  display: none;
+	  min-width: 150px; /* Changed this to accomodate content width */
+	  max-height: auto;
+	  top: 100px;
+		margin-left: 60px;
+		margin-top: -100px;/* Add this to keep dropdown in line with edge of navbar */
+	  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+	  opacity: 0;
+	  position: relative;
+	  white-space: nowrap;
+	  z-index: 1;
+	  will-change: width, height;
+	  
+	}
+	</style>
+	
+</head>
+
+<body>
+	
+  <nav>
+    <div class="nav-wrapper">
+      <div style="position: absolute; left: 20px;" class="col s12">
+        <a href="index.html" class="breadcrumb">Home</a>
+        <a href="#!" class="breadcrumb">Midrange</a>
+     
+      </div>
+    </div>
+  </nav>
+            
+            
+	
+	
+	<br><br><br><br>
+	<footer class="black card-align page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text font1">Mi Hub</h5>
+                <p class="grey-text text-lighten-2">Created by Alexander</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text font1">More</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-2" href="https://github.com/Amarius1/MiHub">Github</a></li>
+                  <li><a class="grey-text text-lighten-2" href="https://materializecss.com/">Materialize</a></li>
+                  <li><a class="grey-text text-lighten-2">Send a suggestion at amariuscontact@gmail.com!</a></li>
+               
+                </ul>
+              </div>
+            </div>
+          </div>
+		   <div class="footer-copyright">
+            <div class="container">
+            
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+            
+	<div class="preloader-background">
+	<div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+        
+</div>
+
+	
+
+
+
+	
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+
+
+  
+
+    <script src="resources/index.js"></script>
+	<script>
+	document.addEventListener("DOMContentLoaded", function(){
+	$('.preloader-background').delay(300).fadeOut('slow');
+	
+	$('.preloader-wrapper')
+		.delay(300)
+		.fadeOut();
+});
+	</script>
+	
+	<script>
+var input = document.getElementById("myFile");
+var output = document.getElementById("output");
+
+input.addEventListener("change", function () {
+  if (this.files && this.files[0]) {
+    var myFile = this.files[0];
+    var reader = new FileReader();
+
+    reader.addEventListener('load', function (e) {
+      output.textContent = e.target.result;
+    });
+
+    reader.readAsBinaryString(myFile);
+  }
+});
+</script>
+	<script>
+	$('.dropdown-trigger').dropdown();
+	</script>
+	
+	<script>
+	$(window).on('resize', function() {
+    if($(window).height() > 400) {
+        $('#body').addClass('limit1200');
+        $('#body').removeClass('limit400');
+    }else{
+        $('#body').addClass('limit400');
+        $('#body').removeClass('limit1200');
+    }
+})
+
+
+	</script>
+	<script>
+	var $el = $("#very-specific-design");
+	var elHeight = $el.outerHeight();
+	var elWidth = $el.outerWidth();
+
+	var $wrapper = $("#scaleable-wrapper");
+
+	$wrapper.resizable({
+	  resize: doResize
+	});
+
+	function doResize(event, ui) {
+	  
+	  var scale, origin;
+		
+	  scale = Math.min(
+		ui.size.width / elWidth,    
+		ui.size.height / elHeight
+	  );
+	  
+	  $el.css({
+		transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
+	  });
+	  
+	}
+
+	var starterData = { 
+	  size: {
+		width: $wrapper.width(),
+		height: $wrapper.height()
+	  }
+	}
+	doResize(null, starterData);
+	</script>
+	<script>
+	var chip = {
+    tag: 'chip content',
+    image: '', //optional
+  };
+    <script>
+
+
+</body>
+
+</html>

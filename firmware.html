@@ -19,6 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet">
    <link rel="stylesheet" href="resources/style.css">
+   <link href="resources/hover.css" rel="stylesheet" media="all">
 	<style>
 	body {
    background-image: url("Wall.jpg");
@@ -270,13 +271,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
       </div>
       <ul class="side-nav" id="mobile-demo">
 		<center><img style="position:relative; top: -50px;" src="https://lh3.googleusercontent.com/-FvgWvixnj0w/WbBMuqf1bLI/AAAAAAAA7XQ/qMyM9zJQQKkmPPgq4vzWd-r9iqLEpYWcQCJoC/s530-p/09.06_AndroidOne_Explode-G.gif" width="80%" height="80%"></center>
-        <li><a style="position:absolute; top: 140px; width: 100%;" href="https://www.gsmarena.com/" class="waves-effect" target="_parent">Specifications</a></li>
-        <li><a style="position:absolute; top: 187px; width: 100%;" href="https://www.xda-developers.com/" class="waves-effect" target="_parent">Custom ROMs</a></li>
+        <li><a style="position:absolute; top: 140px; width: 100%;" class="waves-effect dropdown-button" href="#!" data-activates="dropdown3"><span class="hvr-forward">Specifications</span><i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a style="position:absolute; top: 187px; width: 100%;" href="https://www.xda-developers.com/" class="waves-effect" target="_parent"><span class="hvr-forward">Custom ROMs</span></a></li>
       </ul>
     </div>
   </nav>
 </div>
-
+	 
+	<ul id="dropdown3" class="dropdown-content">
+	  <li><a href="Budget.html" target="_parent" class="waves-effect"><span class="hvr-forward">Budget</span></a></li>
+	  <li><a href="Midrange.html" target="_parent" class="waves-effect"><span class="hvr-forward">Midrange</span></a></li>
+	  <li><a href="Flagship.html" target="_parent" class="waves-effect"><span class="hvr-forward">Flagship</span></a></li>
+	</ul>
 	
 	<img src="http://icons-for-free.com/free-icons/png/512/2744962.png" style="position:relative; top: 140px; left: 47%;" height="100px" width="100px" class="unselectable">
 	<div style="position:relative; top: 140px; font-size:7vw;" class="white-text center font1">Firmware</div>
@@ -299,7 +305,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	</div>
 	</div>
 	
-	<img class="card-place2" src="http://attach.en.miui.com/common/40/common_340_phone.png?ugsz.png" height="117px" width="auto">
 	
 	</div>
 	
@@ -319,7 +324,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	</div>
 	</div>
 	
-	<img class="card-place2" src="http://attach.en.miui.com/common/40/common_340_phone.png?ugsz.png" height="117px" width="auto">
 	
 	</div>
 	</div>
@@ -339,7 +343,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	</div>
 	</div>
 	
-	<img class="card-place2" src="http://attach.en.miui.com/common/ed/common_309_phone.png?ugsz" height="117px" width="auto">
 	
 	</div>
 	</div>
@@ -359,7 +362,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	</div>
 	</div>
 	
-	<img class="card-place2" src="http://attach.en.miui.com/common/3d/common_341_phone.png?ugsz" height="117px" width="auto">
 	
 	</div>
 	</div>
@@ -376,7 +378,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	
 	<a href="http://bigota.d.miui.com/V9.6.10.0.ODIMIFE/jasmine_global_images_V9.6.10.0.ODIMIFE_20180731.0000.00_8.1_2aeda83301.tgz" class="md-aosp btn-align btn-md rounded-low waves-effect waves-green green-text text-darken-1 btn-flat"><b class="md-button btn-align-text">Stable ROM - Android One</b></a></span></span>
 	</div>
-	<img class="card-place2" src="http://attach.en.miui.com/common/13/common_353_phone.png?ugsz" height="117px" width="auto">
 	
 	</div>
 	
@@ -395,7 +396,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	</div>
 	
 	</div>
-	<img class="card-placemix" src="https://www.androidpolice.com/wp-content/themes/ap2/ap_resize/ap_resize.php?src=https%3A%2F%2Fwww.androidpolice.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fnexus2cee_Mi-MIX-2-Special-Edition_02.png&h=340&zc=2" height="140px" width="auto">
 	
 	</div>
 	<br>
@@ -412,7 +412,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 	<a href="http://bigota.d.miui.com/8.8.30/miui_MI6Global_8.8.30_a468343ae7_8.0.zip" class="md-shrink btn-md rounded-low waves-effect waves-red red-text text-darken-1 btn-flat"><b class="md-button btn-align-text">Beta ROM - MIUI 10</b></a></span>
 	</div>
 	</div>
-	<img class="card-place2" src="http://attach.en.miui.com/common/a6/common_326_phone.png?ugsz" height="117px" width="auto">
 	
 	</div>
 	<br>
@@ -488,6 +487,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 
     <script src="resources/index.js"></script>
 	<script>
+(function($) {
+   $(function() {
+
+     $('.button-collapse').sideNav();
+     $('select').material_select();
+     $('.dropdown-button').dropdown();
+
+   }); // end of document ready
+ })(jQuery); // end of jQuery name space
+	</script>
+	<script>
 	document.addEventListener("DOMContentLoaded", function(){
 	$('.preloader-background').delay(300).fadeOut('slow');
 	
@@ -497,40 +507,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
 });
 	</script>
 	
-	<script>
-var input = document.getElementById("myFile");
-var output = document.getElementById("output");
-
-input.addEventListener("change", function () {
-  if (this.files && this.files[0]) {
-    var myFile = this.files[0];
-    var reader = new FileReader();
-
-    reader.addEventListener('load', function (e) {
-      output.textContent = e.target.result;
-    });
-
-    reader.readAsBinaryString(myFile);
-  }
-});
-</script>
-	<script>
-	$('.dropdown-trigger').dropdown();
-	</script>
-	
-	<script>
-	$(window).on('resize', function() {
-    if($(window).height() > 400) {
-        $('#body').addClass('limit1200');
-        $('#body').removeClass('limit400');
-    }else{
-        $('#body').addClass('limit400');
-        $('#body').removeClass('limit1200');
-    }
-})
-
-
-	</script>
 	<script>
 	var $el = $("#very-specific-design");
 	var elHeight = $el.outerHeight();
